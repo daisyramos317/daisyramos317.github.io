@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daisy</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="header" id="myHeader">
+  			<h2>Daisy</h2>
+		</div>
+		<div class="wrapper">
+		<header class="header padded">
+			<img src="images/pikachu.png">
+			<h1>iOS Dev</h1>
+			<h2>Fancy seeing you here!</h2>
+		</header>
+		</div>
+		<section class="padded" id="about">
+
+			<h2>About Me</h2>
+
+			<p>Software dev by day. Asleep at night. Passionate about the mobile ecosystem, the outdoors and building personal finance.</p>
+
+		</section>
+
+		<section class="links padded", id="links">
+
+
+			<h2>Websites I frequent:</h2>
+
+			<ul class="websites">
+				<li><a href="https://www.marketwatch.com/">Market Watch</a></li>
+				<li><a href="http://www.twitter.com">Twitter</a></li>
+			</ul>
+
+			<h2>My favorite hobbies are:</h2>
+			<ol>
+				<li><strong>Drinking Coffee</strong>: There's even a monthly iOS coffee meetup <a href>https://coffeecoffeecoffee.coffee/nyc-ios-coffee</a></li>
+				<li><em>Avocado Toast</em></li>
+				<li><strong>Closing my activity circles on my Apple watch.</strong>: The dev life isn't very active ¯\_(ツ)_/¯</li>
+				<li><strong>Netflix</strong>: What even is cable?</li>
+			</ol>
+
+		</section>
+
+		<section class="contact padded">
+			
+			<h2>Contact Me</h2>
+
+			<a href="mailto:daisy@notadomain.com"><img src="images/email.png"></a>
+			<a href="https://twitter.com/daisyr317"><img src="images/twitter.png"></a>
+			<a href="#"><img src="images/facebook.png"></a>
+			<a href="#"><img src="images/linkedin.png"></a>
+
+		</section>
+	</body>
+
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+ 	 }
+	}
+
+</script>
+</html>
